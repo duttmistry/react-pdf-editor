@@ -109,11 +109,11 @@ export const Text = ({
       prepareTextAndUpdate();
     }
   };
-
+// eslint-disable-next-line @typescript-eslint/no-unused-expressions
   const prepareTextAndUpdate = () => {
     // Deselect any selection when returning to command mode
-    document.getSelection()?.removeAllRanges();
-
+    
+    document.getSelection().removeAllRanges();
     const lines = [content];
     updateTextAttachment({
       lines,
