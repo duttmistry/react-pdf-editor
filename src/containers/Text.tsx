@@ -113,7 +113,7 @@ export const Text = ({
   const prepareTextAndUpdate = () => {
     // Deselect any selection when returning to command mode
     
-    document.getSelection().removeAllRanges();
+    // document.getSelection() ?? document.getSelection()?.removeAllRanges();
     const lines = [content];
     updateTextAttachment({
       lines,
